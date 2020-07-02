@@ -3,14 +3,14 @@
 <h1>About</h1>
 
 <p>
-Console is a minimal, responsive and light theme for Hugo inspired by Linux console.  <a href="about/">(more)</a>
+The Remote Sensing course uses Python and Data Science to improve natural disaster relief and recovery.  <a href="about/">(more)</a>
 </p>
 <br/>
 
-<h1>Latest posts</h1>
+<h1>Useful Links</h1>
 
 <div class="posts-list">
-{{ with .Site.GetPage "/posts" }}
+{{ with .Site.GetPage "/links" }}
     {{ range first 3 (sort .Data.Pages "Date" "desc" (where .Pages ".Params.private" "!=" true))}}
         <div class="post">
             <div class="date">{{ .PublishDate.Format "Jan. 2, 2006" }}</div>    
